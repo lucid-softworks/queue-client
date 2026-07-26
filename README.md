@@ -5,7 +5,9 @@ Enqueue, schedule, inspect, deduplicate, and cancel durable jobs through any
 
 ```ts
 import { QueueClient } from "@lucid-softworks/queue-client";
+import { MemoryQueueStore } from "@lucid-softworks/queue-store-memory";
 
+const client = new QueueClient(new MemoryQueueStore());
 const job = await client.enqueue(
   "send-email",
   { to: "me@example.com" },
