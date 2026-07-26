@@ -1,6 +1,6 @@
 {
   "name": "@lucid-softworks/queue-client",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Enqueue, schedule, inspect, deduplicate, and cancel durable jobs.",
   "keywords": [
     "client",
